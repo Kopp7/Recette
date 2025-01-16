@@ -69,22 +69,21 @@ footer {
 
 
 
+.bgjaune {
+ animation : slideinverse 2s
+}
 
 
-
-
-
-
-
-
-
-
+.bgvert {
+    animation : slide 4s
+}
 
 
 
 
 .bg-rose-pale {
     background-color: #ffe6e6;
+    animation : slideinverse 6s
 }
 
 
@@ -99,6 +98,28 @@ footer {
     from {
 
         transform: translateX(-100px);
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: translateX(0);
+        opacity: 1;
+
+
+    }
+
+
+
+
+}
+
+@keyframes slideinverse {
+
+    from {
+
+        transform: translateX(100px);
         opacity: 0;
 
     }
