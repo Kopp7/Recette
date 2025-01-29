@@ -1,6 +1,5 @@
 .titre {
     margin-top: 120px;
-    font-family: "Pacifico", serif;
     font-weight: 400;
     font-style: normal;
     padding-top: 80px;
@@ -41,19 +40,73 @@ footer {
     background-color: black;
 }
 
+.titrenav {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black,
+         1px -1px 0 black,  
+        -1px  1px 0 black,  
+         1px  1px 0 black;
+}
+
+.h1recette {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #333;
+}
+
+.h1recetteindex {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #333;
+       text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,  
+        -1px  1px 0 white,  
+         1px  1px 0 white;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-size: 1rem; 
+    line-height: 1.8; 
+    color: #555; 
+    margin-bottom: 20px; 
+    margin-top: 20px;
+  }
+
+  .pintro {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,  
+        -1px  1px 0 black,  
+         1px  1px 0 black;
+  }
+
+.btnpd {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
 
 
 
+.titrerecette {
+    margin-top: 20px;
+    opacity: 0; 
+    transform: translateY(30px); 
+    animation: slideIn 1.5s ease-out forwards;
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -86,6 +139,45 @@ footer {
     animation : slideinverse 6s
 }
 
+.button_slide {
+    background: transparent;
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid brown;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+  
+  .slide_left:hover {
+    background: brown;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .button_slide:active {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+
+.btnindex {
+    background: white;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
 
 
 
@@ -118,21 +210,22 @@ footer {
 @keyframes slideinverse {
 
     from {
-
         transform: translateX(100px);
         opacity: 0;
-
     }
-
     to {
-
         transform: translateX(0);
         opacity: 1;
-
-
     }
-
-
-
-
 }
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
